@@ -2,8 +2,8 @@ import smtplib
 from email.mime.text import MIMEText
 
 def send_email(to_address, subject, message):
-    from_address = 'daniela.erive.sanchez.01@gmail.com'  # Your email address
-    password = 'xcve kyqc hrlx bmrr'  # Your email account password or App Password
+    from_address = 'youremail@example.com'  # Your email address
+    password = 'youpassword'  # Your email account password or App Password
 
     # Create the email message
     msg = MIMEText(message)
@@ -16,7 +16,7 @@ def send_email(to_address, subject, message):
          server.sendmail(from_address, to_address, msg.as_string())
 
 # Example Usage
-send_email('danyengsanchez@gmail.com', 'Elective Test Email', 'This is a test email sent using Python.')
+send_email('yourrecipientemail@example.com', 'Elective Test Email', 'This is a test email sent using Python.')
 
 
 # to run type "py email_automation.py" and the email message will be sent to recipient email
